@@ -38,6 +38,9 @@ local.properties
 #
 .vscode/
 
+# Web
+template/dist/
+
 # node.js
 #
 template/node_modules/
