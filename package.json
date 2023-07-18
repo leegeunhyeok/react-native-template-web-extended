@@ -7,7 +7,12 @@
   },
   "files": [
     "template",
-    "template.config.js"
+    "template.config.js",
+    "!template/node_modules/",
+    "!template/ios/Pods/",
+    "!template/ios/Podfile.lock",
+    "!template/vendor/bundle/",
+    "!**/build/"
   ],
   "repository": {
     "type": "git",
