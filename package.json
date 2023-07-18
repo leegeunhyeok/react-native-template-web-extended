@@ -1,0 +1,27 @@
+{
+  "name": "react-native-template-all-in-one",
+  "version": "0.1.0",
+  "description": "Minimal React Native template for all in one (Android, iOS, Web)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leegeunhyeok/react-native-template-all-in-one.git"
+  },
+  "keywords": [
+    "react-native",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Geunhyeok LEE <dev.ghlee@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leegeunhyeok/react-native-template-all-in-one/issues"
+  },
+  "homepage": "https://github.com/leegeunhyeok/react-native-template-all-in-one#readme"
+}
