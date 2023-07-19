@@ -12,9 +12,16 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
   View,
+  Image,
+  Text,
 } from 'react-native';
+import {
+  DebugInstructions,
+  LearnMoreLinks,
+  ReloadInstructions,
+} from './components';
+import logo from './assets/logo.png';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -31,14 +38,27 @@ function Section({children, title}: SectionProps): JSX.Element {
 
 export function App(): JSX.Element {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.page}>
       <StatusBar barStyle="dark-content" />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
+      <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
+        <View style={styles.logoArea}>
+          <Image style={styles.logoImage} source={logo} />
+        </View>
         <View>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
+          <Section title="See Your Changes">
+            <ReloadInstructions />
+          </Section>
+          <Section title="Debug">
+            <DebugInstructions />
+          </Section>
+          <Section title="Learn More">
+            Read the docs to discover what to do next:
+          </Section>
+          <LearnMoreLinks />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -46,6 +66,24 @@ export function App(): JSX.Element {
 }
 
 const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  container: {
+    padding: 8,
+    width: '100%',
+    maxWidth: 600,
+    alignSelf: 'center',
+  },
+  logoArea: {
+    paddingVertical: 36,
+    alignItems: 'center',
+  },
+  logoImage: {
+    width: 64,
+    height: 64,
+  },
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
