@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import { StyleSheet, View, TouchableOpacity, Text, Linking } from 'react-native';
+import {StyleSheet, View, TouchableOpacity, Text, Linking} from 'react-native';
 
 const links = [
   {
@@ -67,10 +67,7 @@ export const LearnMoreLinks = () => {
             onPress={() => Linking.openURL(link)}
             style={styles.linkContainer}>
             <Text style={styles.link}>{title}</Text>
-            <Text
-              style={styles.description}>
-              {description}
-            </Text>
+            <Text style={styles.description}>{description}</Text>
           </TouchableOpacity>
         </Fragment>
       ))}

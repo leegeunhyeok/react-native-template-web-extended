@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -17,30 +16,20 @@ import {
   Text,
 } from 'react-native';
 import {
+  Section,
   DebugInstructions,
   LearnMoreLinks,
   ReloadInstructions,
 } from './components';
 import logo from './assets/logo.png';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): JSX.Element {
-  return (
-    <View style={styles.sectionContainer}>
-      <Text style={styles.sectionTitle}>{title}</Text>
-      <Text style={styles.sectionDescription}>{children}</Text>
-    </View>
-  );
-}
-
 export function App(): JSX.Element {
   return (
     <SafeAreaView style={styles.page}>
       <StatusBar barStyle="dark-content" />
-      <ScrollView style={styles.container} contentInsetAdjustmentBehavior="automatic">
+      <ScrollView
+        style={styles.container}
+        contentInsetAdjustmentBehavior="automatic">
         <View style={styles.logoArea}>
           <Image style={styles.logoImage} source={logo} />
         </View>
