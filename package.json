@@ -1,5 +1,5 @@
 {
-  "name": "react-native-template-all-in-one",
+  "name": "react-native-template-web-extended",
   "version": "0.1.0",
   "description": "Minimal React Native template for all in one (Android, iOS, Web)",
   "scripts": {
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leegeunhyeok/react-native-template-all-in-one.git"
+    "url": "git+https://github.com/leegeunhyeok/react-native-template-web-extended.git"
   },
   "keywords": [
     "react-native",
@@ -26,7 +26,7 @@
   "author": "Geunhyeok LEE <dev.ghlee@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leegeunhyeok/react-native-template-all-in-one/issues"
+    "url": "https://github.com/leegeunhyeok/react-native-template-web-extended/issues"
   },
-  "homepage": "https://github.com/leegeunhyeok/react-native-template-all-in-one#readme"
+  "homepage": "https://github.com/leegeunhyeok/react-native-template-web-extended#readme"
 }
