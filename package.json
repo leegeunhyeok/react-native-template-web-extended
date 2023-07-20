@@ -9,6 +9,7 @@
     "template",
     "template.config.js",
     "!template/node_modules/",
+    "!template/android/.gradle",
     "!template/ios/Pods/",
     "!template/ios/Podfile.lock",
     "!template/vendor/bundle/",
