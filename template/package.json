@@ -15,7 +15,7 @@
     "eject:web": "react-scripts eject",
     "start:storybook:native": "STORYBOOK=1 yarn start:native",
     "start:storybook:web": "PLATFORM=web storybook dev --port 6006",
-    "build:storybook:web": "PLATFORM=web storybook build --output-dir public",
+    "build:storybook:web": "PLATFORM=web storybook build --output-dir dist-storybook",
     "update-stories": "sb-rn-get-stories --config-path .ondevice",
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice"
   },
