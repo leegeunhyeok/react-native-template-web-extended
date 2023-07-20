@@ -13,7 +13,9 @@
     "!template/ios/Pods/",
     "!template/ios/Podfile.lock",
     "!template/vendor/bundle/",
-    "!**/build/"
+    "!**/build/",
+    "!**/dist/",
+    "!**/dist-storybook/"
   ],
   "repository": {
     "type": "git",
