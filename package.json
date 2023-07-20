@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-web-extended",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.0",
   "description": "Minimal React Native template for all in one (Android, iOS, Web)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
