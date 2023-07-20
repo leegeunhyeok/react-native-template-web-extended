@@ -8,6 +8,12 @@
 
 > WIP..
 
+## Features
+
+- 🐤 Based on official React Native project
+- 🔥 Cover Android, iOS, Web with single code base
+- 📚 Storybook (Native and Web)
+
 ## Usage
 
 ```bash

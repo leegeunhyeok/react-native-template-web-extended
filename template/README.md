@@ -4,7 +4,9 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+## Native (Android, iOS)
+
+### Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
@@ -18,11 +20,11 @@ npm start
 yarn start
 ```
 
-## Step 2: Start your Application
+### Step 2: Start your Application
 
 Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+#### For Android
 
 ```bash
 # using npm
@@ -32,7 +34,7 @@ npm run android
 yarn android
 ```
 
-### For iOS
+#### For iOS
 
 ```bash
 # using npm
@@ -46,7 +48,7 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+### Step 3: Modifying your App
 
 Now that you have successfully run the app, let's modify it.
 
@@ -55,9 +57,71 @@ Now that you have successfully run the app, let's modify it.
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
+## Web
+
+### Step 1. Start the Webpack dev server
+
+First, you will need to start **Webpack** dev server.
+
+To start Webpack dev server, run the following command from the _root_ of your React Native project:
+
+```bash
+# using npm
+npm run start:web
+
+# OR using Yarn
+yarn start:web
+```
+
+### Step 2. Open browser
+
+Just enter [http://localhost:3000](http://localhost:3000).
+
+### Step 3. Build
+
+```bash
+# using npm
+npm run build:web
+
+# OR using Yarn
+yarn build:web
+```
+
+You can check build result from `/dist`
+
 ## Congratulations! :tada:
 
 You've successfully run and modified your React Native App. :partying_face:
+
+## Storybook
+
+### Native
+
+```bash
+# using npm
+npm run start:storybook:native
+
+# OR using Yarn
+yarn start:storybook:native
+```
+
+If you have some bundling issues, add `--reset-cache` flag to end of command.
+
+### Web
+
+```bash
+# using npm
+npm run start:storybook:web
+npm run build:storybook:web
+
+# OR using Yarn
+yarn start:storybook:web
+yarn build:storybook:web
+```
+
+And enter [http://localhost:6006](http://localhost:6006).
+
+You can check build result from `/dist-storybook`
 
 ### Now what?
 
